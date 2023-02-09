@@ -26,5 +26,4 @@ export class JwtAuthGuard implements CanActivate{
             throw new UnauthorizedException({message: 'Urer is not authorized'});
         }
     }
-
 }

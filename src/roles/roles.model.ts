@@ -9,7 +9,7 @@ interface RoleCreationAttrs {
 }
 
 @Table({tableName: 'roles'})
-export class Role extends Model<Role,RoleCreationAttrs> {
+export class Role extends Model<Role, RoleCreationAttrs> {
     @ApiProperty({example: '1', description: 'Unique identifier'})
     @Column({type: DataType.INTEGER, unique: true, autoIncrement: true, primaryKey: true})
     id: number;
