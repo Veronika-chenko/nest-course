@@ -21,7 +21,7 @@ export class Role extends Model<Role, RoleCreationAttrs> {
     @ApiProperty({example: 'Administrator', description: 'Role description'})
     @Column({type: DataType.STRING, allowNull: false})
     description: string;
-    //  c какой сущностью связываем и через какую таблицу это делаем
+    
     @BelongsToMany(() => User, () => UserRoles)
     users: User[];
 }
